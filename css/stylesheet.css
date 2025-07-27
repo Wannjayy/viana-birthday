@@ -1322,6 +1322,9 @@ audio {
   	box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   	padding: 10px;
   	background: #f0eae3;
+	opacity: 0; /* Mulai dengan opacity 0 */
+  	animation: img-come 4s forwards;
+	animation-delay: 0s;
 }
 
 #img-right {
@@ -1334,6 +1337,20 @@ audio {
   	box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   	padding: 10px;
   	background: #f0eae3;
+	opacity: 0; /* Mulai dengan opacity 0 */
+  	animation: img-come 4s forwards;
+	animation-delay: 0s;
+}
+
+@keyframes img-come {
+  0% {
+    opacity: 0;
+    transform: scale(0.2); /* Gambar mulai lebih kecil */
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1); /* Gambar akan kembali ke ukuran normal */
+  }
 }
 
 .message {
